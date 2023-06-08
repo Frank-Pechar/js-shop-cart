@@ -1,11 +1,17 @@
-# js-shopping-cart
-Shopping cart app
+# Favorite Movie List Project
+# JavaScript Project
+## Desription of App Functionality, Features, and Methods
 
-Javascript project I complete from Udemy Course - Javascript - The Complete Guide 2023 by Maximilian Schwarzmuller
+Javascript project I completed from Udemy - Javascript - The Complete Guide 2023 by Maximilian Schwarzmuller. After coding this project I added extensive commenting for educational purposes.
 
-USAGE OF:
+App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 
-  1) Base and Sub Classes using extends and super. 
-  2) Static Methods on Class
-  3) Setters and Getters
-  4) DOM Manipulation
+## This App Uses Javascript Features Such As:
+
+- Basic DOM manipulation
+- Base and Sub Classes using extends and super
+- Static Methods on Class
+- Setters and Getters
+- DOM Manipulation
+
+## Coding Methods and Features Used:
