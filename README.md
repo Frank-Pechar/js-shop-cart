@@ -1,4 +1,4 @@
-# Favorite Movie List Project
+# Shopping Cart Project
 # JavaScript Project
 ## Desription of App Functionality, Features, and Methods
 
@@ -14,5 +14,6 @@ App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 - Setters and Getters
 - DOM Manipulation
 - Dynamically create ele, cl, atr
+- Private Fields
 
 ## Coding Methods and Features Used:
