@@ -13,5 +13,6 @@ App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 - Static Methods on Class
 - Setters and Getters
 - DOM Manipulation
+- Dynamically create ele, cl, atr
 
 ## Coding Methods and Features Used:
