@@ -8,6 +8,7 @@ App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 
 ## This App Uses Javascript Features Such As:
 
+- Extensive use of classes and objects
 - Basic DOM manipulation
 - Base and Sub Classes using extends and super
 - Static Methods on Class
