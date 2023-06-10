@@ -11,7 +11,7 @@ App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 - Extensive use of classes and objects
 - Basic DOM manipulation
 - Base and Sub Classes using extends and super
-- Static Methods on Class
+- Static Methods and fields on Class
 - Setters and Getters
 - DOM Manipulation
 - Dynamically create ele, cl, atr
