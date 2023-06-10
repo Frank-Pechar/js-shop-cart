@@ -21,5 +21,7 @@ App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 - Created and inserted DOM elements using:
 -     createElement, className, setAttribute, innerHTML, append
 - Setters and getters for updating total amount rendered in DOM h2 element
-- Use of bind() and arrow functions to handle this keyword reference correctly
-- Array methods: reduce
+- Use of bind() and arrow functions to handle this keyword references correctly
+- Array methods: reduce, push
+- Use of #private field
+- Use of static field and methods
