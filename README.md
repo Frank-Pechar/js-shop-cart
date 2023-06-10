@@ -10,9 +10,13 @@ App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 
 - Extensive use of classes and objects
 - Base and Sub Classes using extends and super
-- Static Methods and fields on Class
+- Static Methods and fields on Classes
 - Setters and Getters
-- DOM Manipulation
 - Private Fields
 
 ## Coding Methods and Features Used:
+
+- Use of base and sub classes, and objects using:
+-     this, extends, super, constructor
+- Created and inserted DOM elements using:
+-     createElement, className, setAttribute, innerHTML, append
