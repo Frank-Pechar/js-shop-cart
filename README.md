@@ -2,7 +2,7 @@
 # JavaScript Project
 ## Desription of App Functionality, Features, and Methods
 
-Javascript project I completed from Udemy - Javascript - The Complete Guide 2023 by Maximilian Schwarzmuller. After coding this project I added extensive commenting for educational purposes.
+Javascript project I completed from Udemy - Javascript - The Complete Guide 2023 by Maximilian Schwarzmuller. After coding this project I added minor changes and commenting for educational purposes.
 
 App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 
@@ -16,12 +16,9 @@ App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 
 ## Coding Methods and Features Used:
 
-- Use of base and sub classes, and objects using:
--     this, extends, super, constructor
-- Created and inserted DOM elements using:
--     createElement, className, setAttribute, innerHTML, append
+- Use of base and sub classes, and objects using: new, this, extends, super, constructor
+- Created and inserted DOM elements using: createElement, className, setAttribute, innerHTML, append
 - Setters and getters for updating total amount rendered in DOM h2 element
 - Use of bind() and arrow functions to handle this keyword references correctly
-- Array methods: reduce, push
 - Use of #private field
 - Use of static field and methods
