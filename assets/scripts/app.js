@@ -1,3 +1,4 @@
+// product object blueprint definition
 class Product {
   constructor(title, image, desc, price) {
     this.title = title;
@@ -7,6 +8,7 @@ class Product {
   }
 }
 
+// creates object of attribute names and values
 class ElementAttribute {
   constructor(attrName, attrValue) {
     this.name = attrName;
@@ -14,16 +16,14 @@ class ElementAttribute {
   }
 }
 
+// base class creates and inserts DOM elements
 class Component {
   constructor(renderHookId, shouldRender = true) {
+    // assigns DOM hook for inserting html
     this.hookId = renderHookId;
-    if (shouldRender) {
-      this.render();
-    }
   }
 
-  render() {}
-
+  // generalized code to create section, ul, and li elements
   createRootElement(tag, cssClasses, attributes) {
     const rootElement = document.createElement(tag);
     if (cssClasses) {
@@ -39,9 +39,12 @@ class Component {
   }
 }
 
+// Object code for shopping cart section
 class ShoppingCart extends Component {
+  // array for product items in the shopping cart
   items = [];
 
+  // output total amount to cart section DOM
   set cartItems(value) {
     this.items = value;
     this.totalOutput.innerHTML = `<h2>Total: \$${this.totalAmount.toFixed(
@@ -49,6 +52,7 @@ class ShoppingCart extends Component {
     )}</h2>`;
   }
 
+  // sum total amounts from items (ShoppingCart) array
   get totalAmount() {
     const sum = this.items.reduce(
       (prevValue, curItem) => prevValue + curItem.price,
@@ -60,12 +64,14 @@ class ShoppingCart extends Component {
   constructor(renderHookId) {
     super(renderHookId, false);
     this.orderProducts = () => {
-      console.log('Ordering...');
-      console.log(this.items);
+      alert('Processing Order...');
+      // console.log(this.items);
     };
+    // this executes the code to render the shopping cart header section
     this.render();
   }
 
+  // add product to cart array
   addProduct(product) {
     const updatedItems = [...this.items];
     updatedItems.push(product);
@@ -73,8 +79,11 @@ class ShoppingCart extends Component {
   }
 
   render() {
+    // insert cart section element into DOM
     const cartEl = this.createRootElement('section', 'cart');
+    // insert this html inside of cart section
     cartEl.innerHTML = `
+      <h1>Shopping Cart</h1>
       <h2>Total: \$${0}</h2>
       <button>Order Now!</button>
     `;
@@ -85,6 +94,7 @@ class ShoppingCart extends Component {
   }
 }
 
+// Object code the handles logic for inserting product li element into DOM
 class ProductItem extends Component {
   constructor(product, renderHookId) {
     super(renderHookId, false);
@@ -92,12 +102,16 @@ class ProductItem extends Component {
     this.render();
   }
 
+  // this handler function is called when add to cart button is clicked
   addToCart() {
+    // call static function in App class
     App.addProductToCart(this.product);
   }
 
   render() {
+    // create li element in insert into DOM
     const prodEl = this.createRootElement('li', 'product-item');
+    // insert into li element in the DOM
     prodEl.innerHTML = `
         <div>
           <img src="${this.product.imageUrl}" alt="${this.product.title}" >
@@ -109,20 +123,25 @@ class ProductItem extends Component {
           </div>
         </div>
       `;
+    // add handler for adding product to cart
     const addCartButton = prodEl.querySelector('button');
     addCartButton.addEventListener('click', this.addToCart.bind(this));
   }
 }
 
+// Object that controls the creation of DOM product list
 class ProductList extends Component {
   #products = [];
 
   constructor(renderHookId) {
     super(renderHookId, false);
+    // render ul element
     this.render();
+    // load mock product data into #products array
     this.fetchProducts();
   }
 
+  // create product objects
   fetchProducts() {
     this.#products = [
       new Product(
@@ -138,15 +157,19 @@ class ProductList extends Component {
         89.99
       ),
     ];
+    // render list of products
     this.renderProducts();
   }
 
+  // render each product as a li to the DOM
   renderProducts() {
     for (const prod of this.#products) {
       new ProductItem(prod, 'prod-list');
     }
   }
 
+  // render ul element
+  // ElementAttribute returns a attr name and value object
   render() {
     this.createRootElement('ul', 'product-list', [
       new ElementAttribute('id', 'prod-list'),
@@ -157,28 +180,35 @@ class ProductList extends Component {
   }
 }
 
+// object controls main logic for rendering DOM
 class Shop {
   constructor() {
     this.render();
   }
 
   render() {
+    // create cart object
     this.cart = new ShoppingCart('app');
     new ProductList('app');
   }
 }
 
 class App {
+  // init cart object
   static cart;
 
   static init() {
+    // create DOM shopping cart section
     const shop = new Shop();
+    // store pointer to shoppingCart object so addProductToCart can be called when add to cart button is clicked
     this.cart = shop.cart;
   }
 
+  // this static method acts as a bridge between ProductItem and ShoppingCart
   static addProductToCart(product) {
     this.cart.addProduct(product);
   }
 }
 
+// start processing
 App.init();
