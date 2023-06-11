@@ -10,7 +10,7 @@ App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 
 - Extensive use of classes and objects
 - Base and Sub Classes using extends and super
-- Static Methods and fields on Classes
+- Static Methods and Fields on Classes
 - Setters and Getters
 - Private Fields
 
