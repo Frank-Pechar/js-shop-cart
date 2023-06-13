@@ -14,7 +14,7 @@ This App Provides for Adding Products to a Shopping Cart
 - App will add product amount to total in Shopping Cart Section
 - Click &lt;Order Now!&gt; Button will display Processing Order Message
 
-## Javascript Features and Methods Used:
+## Javascript Features and Methods Used
 
 - Extensive base and sub classes for objects 
 - Static Methods and Fields on Classes
