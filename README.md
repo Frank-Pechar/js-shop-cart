@@ -8,7 +8,7 @@ App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 
 ## App Functionality
 
-Add a Product to the Shopping Cart
+This Add Provides for Adding Products to a Shopping Cart
 
 - Click &lt;Add to Cart&gt; Button
 - App will add product amount to total in Shopping Cart Section
