@@ -6,19 +6,21 @@ Javascript project I completed from Udemy - Javascript - The Complete Guide 2023
 
 App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 
-## This App Uses Javascript Features Such As:
+## App Functionality
 
-- Extensive use of classes and objects
-- Base and Sub Classes using extends and super
+Add a Product to the Shopping Cart
+
+- Click &lt;Add to Cart&gt; Button
+- App will add product amount to total in Shopping Cart Section
+- Click &lt;Order Now!&gt; Button will display Processing Order Message
+
+## Javascript Features and Methods Used:
+
+- Extensive base and sub classes for objects 
 - Static Methods and Fields on Classes
 - Setters and Getters
 - Private Fields
+- Created and inserted DOM elements
+- Use of bind() and arrow functions to handle 'this' keyword references correctly
 
-## Coding Methods and Features Used:
-
-- Use of base and sub classes, and objects using: new, this, extends, super, constructor
-- Created and inserted DOM elements using: createElement, className, setAttribute, innerHTML, append
-- Setters and getters for updating total amount rendered in DOM h2 element
-- Use of bind() and arrow functions to handle this keyword references correctly
-- Use of #private field
-- Use of static field and methods
+List of come methods and properties used: new, this, extends, super(), constructor(), static, createElement(), className, setAttribute(), innerHTML, append(), set, get, bind(), #privateField
