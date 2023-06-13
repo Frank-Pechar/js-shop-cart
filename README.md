@@ -23,4 +23,4 @@ This App Provides for Adding Products to a Shopping Cart
 - Created and inserted DOM elements
 - Use of bind() and arrow functions to handle 'this' keyword references correctly
 
-List of come methods and properties used: new, this, extends, super(), constructor(), static, createElement(), className, setAttribute(), innerHTML, append(), set, get, bind(), #privateField
+List of some methods and properties used: new, this, extends, super(), constructor(), static, createElement(), className, setAttribute(), innerHTML, append(), set, get, bind(), #privateField
