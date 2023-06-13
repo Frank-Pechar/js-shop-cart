@@ -1,5 +1,5 @@
-# Shopping Cart Project
-# JavaScript Project
+# Shopping Cart App
+## JavaScript Project
 ## Desription of App Functionality, Features, and Methods
 
 Javascript project I completed from Udemy - Javascript - The Complete Guide 2023 by Maximilian Schwarzmuller. After coding this project I added minor changes and commenting for educational purposes.
