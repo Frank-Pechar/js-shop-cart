@@ -6,9 +6,13 @@ Javascript project I completed from Udemy - Javascript - The Complete Guide 2023
 
 App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
 
-## App Functionality
+## App Description
 
 This App Provides for Adding Products to a Shopping Cart
+
+## App Functionality
+
+Add Product to Shopping Cart
 
 - Click &lt;Add to Cart&gt; Button
 - App will add product amount to total in Shopping Cart Section
@@ -23,4 +27,6 @@ This App Provides for Adding Products to a Shopping Cart
 - Created and inserted DOM elements
 - Use of bind() and arrow functions to handle 'this' keyword references correctly
 
-List of some methods and properties used: new, this, extends, super(), constructor(), static, createElement(), className, setAttribute(), innerHTML, append(), set, get, bind(), #privateField
+List of some methods and properties used: 
+
+new, this, extends, super(), constructor(), static, createElement(), className, setAttribute(), innerHTML, append(), set, get, bind(), #privateField
