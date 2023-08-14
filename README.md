@@ -4,7 +4,7 @@
 
 Javascript project I completed from Udemy - Javascript - The Complete Guide 2023 by Maximilian Schwarzmuller. After coding this project I added some minor changes and added comments for educational purposes.
 
-App can be run from: https://frank-pechar-js-shop-cart.netlify.app/
+App can be run from: https://frank-pechar-js-shopping.netlify.app/
 
 ## App Description
 
